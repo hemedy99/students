@@ -1,26 +1,32 @@
-package zanat.co.tz.students.config;
+// package zanat.co.tz.students.config;
 
-import javax.persistence.EntityManagerFactory;
+// import javax.persistence.EntityManagerFactory;
+// import com.fasterxml.jackson.databind.Module;
+// import com.fasterxml.jackson.datatype.hibernate5.Hibernate5Module;
+// import org.springframework.context.annotation.Bean;
+// import org.springframework.context.annotation.Configuration;
+// import org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor;
+// import org.springframework.orm.jpa.JpaTransactionManager;
+// import org.springframework.transaction.PlatformTransactionManager;
+// import org.springframework.transaction.annotation.EnableTransactionManagement;
+// @Configuration
+// @EnableTransactionManagement
+// public class HibernateConfiguration {
 
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor;
-import org.springframework.orm.jpa.JpaTransactionManager;
-import org.springframework.transaction.PlatformTransactionManager;
-import org.springframework.transaction.annotation.EnableTransactionManagement;
+//     @Bean
+//     public Module hibernate5Module() {
+//         return new Hibernate5Module();
+//     }
+    
+//     @Bean
+//     public PlatformTransactionManager transactionManager(EntityManagerFactory emf) {
+//         JpaTransactionManager transactionManager = new JpaTransactionManager();
+//         transactionManager.setEntityManagerFactory(emf);
+//         return transactionManager;
+//     }
 
-@Configuration
-@EnableTransactionManagement
-public class HibernateConfiguration {
-    @Bean
-    public PlatformTransactionManager transactionManager(EntityManagerFactory emf) {
-        JpaTransactionManager transactionManager = new JpaTransactionManager();
-        transactionManager.setEntityManagerFactory(emf);
-        return transactionManager;
-    }
-
-    @Bean
-    public PersistenceExceptionTranslationPostProcessor exceptionTranslation() {
-        return new PersistenceExceptionTranslationPostProcessor();
-    }  
-}
+//     @Bean
+//     public PersistenceExceptionTranslationPostProcessor exceptionTranslation() {
+//         return new PersistenceExceptionTranslationPostProcessor();
+//     }  
+// }
